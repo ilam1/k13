@@ -14,8 +14,8 @@ def hello_world():
     url = data.geturl()
     head = data.info()
     content = data.read()
-    d = json.loads()
-    return render_template("nasa.html", head = head, content = content, d = url)
+    d = json.loads(content)
+    return render_template("nasa.html", pic = d["url"], content = d["explanation"])
 
 if __name__ == "__main__":
     app.debug = True
