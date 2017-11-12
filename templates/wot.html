@@ -1,0 +1,67 @@
+<!--
+Irene Lam
+SoftDev pd7
+K#13: A RESTful Journey Skyward
+2017-11-10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WOT</title>
+</head>
+<body>
+	<p>{{ content }} </p>
+    {% for entry in level %}
+        <h2>Group : {{ entry }} -> confidence {{ level[entry] }}</h2>
+    {% endfor %}
+    <br><h3>Translations for above JSON values found <a href="https://www.mywot.com/wiki/API">here</a></h3>
+    <br>Shown below for convenience:<br>
+    <table border="1">
+        <tr>
+            <th>Category Identifier</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>301</td>
+            <td>Online tracking</td>
+        </tr>
+        <tr>
+            <td>304</td>
+            <td>Other</td>
+        </tr>
+        <tr>
+            <td>501</td>
+            <td>Good site</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Reputation value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td> ≥80 </td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td> ≥60 </td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td> ≥40 </td>
+            <td>Unsatisfactory</td>
+        </tr>
+        <tr>
+            <td> ≥20 </td>
+            <td>Poor</td>
+        </tr>
+        <tr>
+            <td> ≥0 </td>
+            <td>Very poor</td>
+        </tr>
+    </table>
+</body>
+</html>
